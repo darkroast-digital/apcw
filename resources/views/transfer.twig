@@ -1,0 +1,48 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}transfer{% endblock %}
+{% block title %}Transfer Your Prescription{% endblock %}
+
+{% block content %}
+
+<section class="hero hero-transfer">
+    <div class="hero__container container">
+        <h1>Transfer</h1>
+    </div>
+</section>
+
+<section class="transfer-form">
+    <div class="transfer-form__container container">
+        <h3>Transfer Prescriptions to Amherstburg Pharmacy</h3>
+        <p>Amherstburg Pharmacy provides personalized service for each of our patiets. To transfer your current prescriptions to us today, fill out the form below and we will begin the process and give you a call when your prescription is ready.</p>
+
+        <form action="{{ path_for('home') }}" method="post" class="form">
+            <div class="field">
+                <label for="pharmName">Current Pharmacy Name*</label>
+                <input type="text" name="pharmName" id="pharmName" required>
+            </div>
+            <div class="field">
+                <label for="pharmPhone">Current Pharmacy Phone Number*</label>
+                <input type="text" name="pharmPhone" id="pharmPhone" required>
+            </div>
+            <div class="field">
+                <label for="prescriptionNum">Prescription Number*</label>
+                <input type="text" name="prescriptionNum" id="prescriptionNum" required>
+            </div>
+            <div class="field">
+                <label for="patName">Patient Name*</label>
+                <input type="text" name="patName" id="patName" required>
+            </div>
+            <div class="field">
+                <label for="patPhone">Patient Phone Number*</label>
+                <input type="text" name="patPhone" id="patPhone" required>
+            </div>
+            <div class="field">
+                <label for="pickUp">Date of Pick Up*</label>
+                <input type="date" name="pickUp" id="pickUp" required>
+            </div>
+            <button class="button submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

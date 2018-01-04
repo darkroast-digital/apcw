@@ -1,0 +1,97 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}home{% endblock %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<section class="hero-slider">
+    <div class="slider">
+        <img src="/assets/img/header-1.jpg" draggable="false">
+        <img src="/assets/img/header-2.jpg" draggable="false">
+        <img src="/assets/img/header-3.jpg" draggable="false">
+    </div>
+</section>
+
+<section class="cta">
+    <div class="cta__container container">
+        <div class="cta-nav">
+            <ul>
+                <li>
+                    <a href="{{ path_for('transfer') }}">
+                        <img src="/assets/img/transfer.svg" draggable="false">
+                        <p>Transfer A Prescription</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://amherstburg.erefills.ca/amherstburg/centralprofile/orderpage2.php" target="_blank">
+                        <img src="/assets/img/refill.svg" draggable="false">
+                        <p>Refill a Prescription</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://amherstburg.erefills.ca/amherstburg/centralprofile/login.php" target="_blank">
+                        <img src="/assets/img/login.svg" draggable="false">
+                        <p>Patient Login</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cta-app container--full">
+            <div class="column-8">
+                <h4>Access Your Prescriptions and Order Refills Quickly</h4>
+                <h2>Download The New Mobile App Today</h2>
+                <p>As part of maintaining a healthy life, Amherstburg Pharmacy Compounding and Wellness is proud to introduce a smartphone application. The application allows you to manage your prescription profile and order your prescriptions quickly and easily using Android Devices. Have your prescription profile at your finger tips any time you need it. At the emergency room, walk-in clinic, doctors office, everywhere!</p>
+
+                <div class="download-links">
+                    <a href="https://play.google.com/store/apps/details?id=com.amjaysoftware.pharmacy.amherstburg_client&hl=en" target="_blank">
+                        <img src="/assets/img/play-store.jpg" alt="Get it on Google play" draggable="false">
+                    </a>
+                    <a href="https://itunes.apple.com/ca/app/apcw-pharmacy-amherstburg/id1181549938?mt=8" target="_blank">
+                        <img src="/assets/img/app-store.jpg" alt="Download on the App Store" draggable="false">
+                    </a>
+                </div>
+            </div>
+            <div class="column-4">
+                <img src="/assets/img/app-cta.png" draggable="false">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="video">
+    <div class="video__container container">
+        <iframe src="https://player.vimeo.com/video/214841166?title=0&byline=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+</section>
+
+<section class="services">
+    <div class="services__container container">
+        <div class="column-4 service">
+            <div class="img-container">
+                <img src="/assets/img/time.jpg" alt="Get Your Scripts In One Trip" draggable="false">
+            </div>
+            <h3>Time My Meds&reg;</h3>
+            <p>Time My Meds&reg; is a time-saving service that can synchronize all of your prescriptions to be ready on the same day each month.</p>
+            <a href="{{ path_for('services') }}#1">Learn More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="column-4 service">
+            <div class="img-container">
+                <img src="/assets/img/compounding-service.jpg" alt="Compounding" draggable="false">
+            </div>
+            <h3>Compounding</h3>
+            <p>Compounding makes it easier for patients to receive the ideal medication for their needs and preferences.</p>
+            <a href="{{ path_for('services') }}#2">Learn More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="column-4 service">
+            <div class="img-container">
+                <img src="/assets/img/time-service.jpg" alt="Our Hours" draggable="false">
+            </div>
+            <h3>We Are Now: <span class="our-hours">Open</span></h3>
+            <p>Medical support when you need it. Our pharmacy is dedictated to provide our patients with the best treament possible. We are open Monday-Friday from 9-6 and Saturdays from 9-2.</p>
+            <a href="{{ path_for('contact') }}">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

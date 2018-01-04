@@ -1,0 +1,45 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}products{% endblock %}
+{% block title %}Products{% endblock %}
+
+{% block content %}
+
+<section class="hero hero-products">
+    <div class="hero__container container">
+        <h1>Products</h1>
+    </div>
+</section>
+
+<section class="tabs">
+    <ul class="tabs__nav">
+        <li data-tab="otc" class="is--active">Over The Counter</li>
+        <li data-tab="preferred-pricing">Loyalty and Rewards</li>
+    </ul>
+    <div class="tabs__body">
+        <div class="tabs__content is--active" data-tab="otc">
+            <div class="container">
+                <div class="column-7 text">
+                    <h2>Over The Counter</h2>
+                    <p>For your convenience, we offer a variety of Over the Counter Medications readily available without prescription. Our product inventory ranges from allergy and pain medication to sleeping aides, laxatives, vitamins, minerals, and herbals.</p>
+                </div>
+                <div class="column-5 images">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs__content" data-tab="preferred-pricing">
+            <div class="container">
+                <div class="column-7 text">
+                    <h2>Loyalty and Rewards</h2>
+                    <p>Coming Soon.</p>
+                </div>
+                <div class="column-5 images">
+                    <img src="/assets/img/pref.jpg" draggable="false">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

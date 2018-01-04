@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Viewport Meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Mobile Theme Colour -->
+
+    <meta name="theme-color" content="#4a7eb8">
+
+    <!-- Title and Description -->
+
+    <title>{% block title %}{% endblock %} | Amherstburg Home Health Pharmacy</title>
+    <meta name="description" content="Our goal is to help physicians, veterinarians, and patients by developing customized formulas and finding unique solutions to medication problems.">
+    <meta name="keywords" content="Amhertsburg, pharmacy, medication, compounding, wellness, reffils, prescription">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="/assets/img/fav.png">
+    
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Amherstburg Home Health Pharmacy">
+    <meta property="og:description" content="Our goal is to help physicians, veterinarians, and patients by developing customized formulas and finding unique solutions to medication problems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://apcw.ca">
+    <meta property="og:site_name" content="Amherstburg Home Health Pharmacy">
+    <meta property="og:image" content="/assets/img/ogimage.jpg">
+    
+
+    <!--[if lt IE 9]>
+     <script src="js/polyfill/html5-shiv.js"></script>
+  <![endif]-->
+
+
+</head>
+<body>
+    {% include 'partials/off-canvas.twig' %}
+    <div class="{% block pageclass %}{% endblock %}" id="app">
+            <div class="content">
+                {% include 'partials/header.twig' %}
+                {% include 'partials/overlay.twig' %}
+                {% block content %}{% endblock %}
+                {% include 'partials/footer.twig' %}
+            </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBqLu5n6YnKCI8OCTXT7Bup5IXdoYDqXY"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+    {# Mister Sandman...sand me a man... #}
+</body>
+</html>

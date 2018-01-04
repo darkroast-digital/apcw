@@ -1,0 +1,141 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}services{% endblock %}
+{% block title %}Services{% endblock %}
+
+{% block content %}
+
+<section class="hero hero-services">
+    <div class="hero__container container">
+        <h1>Services</h1>
+    </div>
+</section>
+
+<section class="services-tabs">
+    <div class="tabs">
+        <ul class="tabs__nav">
+            <li data-tab="time" class="is--active">Time My Meds</li>
+            <li data-tab="compounding">Compounding</li>
+            <li data-tab="addiction">Addiction</li>
+            <li data-tab="packaging">Packaging</li>
+            <li data-tab="flu">Flu Clinics and Vaccines</li>
+        </ul>
+        <div class="tabs__body">
+            <div class="tabs__content is--active" data-tab="time">
+                <div class="container">
+                    <div class="column-7 text">
+                        <h2>Time My Meds</h2>
+                        <p><span>Time My Meds&reg; is a time-saving service that can synchronize all of your prescriptions to be ready on the same day each month. It simplifies your life by eliminating extra trips to the pharmacy. Enrolling is easy. Simply talk with your Pharmacist and tell them you want to sign up for Time My Meds.</span></p>
+                        <p>It works like this:</p>
+                        <ol>
+                            <li>You and your Pharmacist will determine the best pick up date.</li>
+                            <li>On that date, you'll receive a notification that your prescriptions are ready.</li>
+                            <li>At pick up, your Pharmacist can discuss any questions or concerns about health or medications.</li>
+                        </ol>
+                    </div>
+                    <div class="column-5 images">
+                        <img src="/assets/img/tmm.jpg" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs__content" data-tab="compounding">
+                <div class="container">
+                    <div class="column-7 text">
+                        <h2>What is Compounding?</h2>
+                        <p><span>Compounding is the preparation of customized medications.</span></p>
+                        <p>Compounding makes it easier for patients to receive the ideal medication for their needs and preferences. Compounding is the preparation of customized medications. Compounded medications are made based on a practitioner’s prescription in which individual ingredients are mixed together in the exact strength and dosage form required by the patient.</p>
+                        <p>Compounding pharmacists work together with both prescribers and their patients to develop the most appropriate therapy for each person.</p>
+                        <p>Our Pharmacist have are trained and certified to prepare unique medications that are tailored to your needs. With our state of the art equipment and facilities we’re able to compound your medication right here while you wait.</p>
+                        <p>Examples of our compounding solutions:</p>
+                        <ol>
+                            <li>Compounding your medication into a lollipop or liquid form and adding your favourite flavour to make it easier to take.</li>
+                            <li>Compounding your medication to exclude a particular ingredient that you may be allergic to.</li>
+                            <li>Compounding your medication to adjust dosages to ones that may be for suitable for you.</li>
+                        </ol>
+                        <p>Can all pharmacies compound? No, Compounding requires specialized equipment and chemicals that are not available in most pharmacies. Compounding pharmacists must undergo extensive training in modern compounding techniques and attend continuing education seminars regularly.</p>
+                        <p>Certified by the Professional Compounding Centres of America, we are one of the few compounding facilities in South Western Ontario that is licensed and equipped to develop custom medications on site.</p>
+                        <p>Not just for Humans! As a pet owner, you want your pet to receive the highest-quality veterinary care. Our compounding solutions are available for a wide variety of veterinary medications as well.</p>
+                        <p>Want to know more? Ask one of our Pharmacists today!</p>
+                    </div>
+                    <div class="column-5 images">
+                        <img src="/assets/img/compounding.jpg" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs__content" data-tab="addiction">
+                <div class="container">
+                    <div class="column-7 text">
+                        <h2>Addiction and Counselling</h2>
+                        <p>The majority of our patients do not use heroin and never have. Most of our patients see us for problems related to prescription opioids. The Amherstburg Pharmacy opioid support program can help with a large variety of opioid problems, including:</p>
+                        <ul>
+                            <li>Opioid Use Disorder</li>
+                            <li>Poor Pain Control</li>
+                            <li>Opioid Side Effects</li>
+                            <li>Nausea</li>
+                            <li>Poor Sleep</li>
+                            <li>Constipation</li>
+                            <li>Withdrawal</li>
+                        </ul>
+                        <p>Our program offers a wide variety of support services including:</p>
+                        <ul>
+                            <li>Medication Treatment</li>
+                            <li>Primary Care</li>
+                            <li>Counseling</li>
+                        </ul>
+                    </div>
+                    <div class="column-5 images">
+                        <img src="/assets/img/addiction.jpg" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs__content" data-tab="packaging">
+                <div class="container">
+                    <div class="column-7 text">
+                        <h2>Packaging</h2>
+                        <h4>PacMed&reg;</h4>
+                        <p>The PacMed System is ideal for use in assisted-living or long-term care homes with multiple patients, where multiple caregivers administer medications. The system consists of a strip of cellophane pouches, containing multi-dose or unit-dose medications, and a Pouch Porter box to store them in.</p>
+                        <p>The PacMed System is also a great travel aid for individual patients: Janzen's can custom-package your medications and supplements into daily or multi-day pouches. Just toss them in your suitcase, and you're ready to go!</p>
+                    </div>
+                    <div class="column-5 images">
+                        <img src="/assets/img/pacmed.jpg" draggable="false">
+                    </div>
+
+                    <div class="column-7 text">
+                        <h4>DISPILL&reg;</h4>
+                        <p>DISPILL is a patented system that lets pharmacies deliver prescribed medication to consumers in an all-inclusive blister pack. Each sealed blister thereafter contains all of one consumer’s prescribed medication for a given intake time (breakfast, lunch, dinner, bedtime) on a precise date.</p>
+                    </div>
+                    <div class="column-5 images">
+                        <img src="/assets/img/dispill.png" draggable="false">
+                    </div>
+
+                    <div class="column-7 text">
+                        <h4>MedPak&reg;</h4>
+                        <p>Our MedPak(TM) packaging is the perfect solution for anyone who struggles to remember when to take their meds or finds it difficult to juggle muddle medications and dosages. Medications can do more harm than good if you’re not taking them as prescribed by your physician. If you or a loved one is having trouble staying compliant with medication, resulting in missed doses, MedPak is the solution for you.</p>
+                    </div>
+                    <div class="column-5 images">
+                        <img src="/assets/img/medpack-com.png" draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs__content" data-tab="flu">
+                <div class="container">
+                    <div class="column-7 text">
+                        <h2>Flu Clinics & Vaccines</h2>
+                        <h3>Coming Soon</h3>
+                        <p>The flu is not always a harmless illness. It is a contagious viral infection that can cause serious health issues, including death, to those that are susceptible. Posing the greatest risk to very young children, seniors over the age of 65, and those with chronic medical conditions, the flu has the potential to affect even the healthy.</p>
+                        <p>The flu shot is an inactivated vaccine, containing killed virus, and is usually administered by a needle in the arm. Nasal sprays are now available as an alternative to the needle. Flu vaccines are constantly changing, and it is important to keep yourself protected by getting vaccinated every influenza season.</p>
+                        <p>Amhersrtburg Pharmacy Compounding & Wellness is licensed and equipped to administer the flu shot as well as other vaccines upon request. To get your shot, simply call us today to book an appointment.</p>
+                    </div>
+                    <div class="column-5 images">
+                        <img src="/assets/img/flu.jpg" draggable="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

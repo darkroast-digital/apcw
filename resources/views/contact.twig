@@ -1,0 +1,33 @@
+{% extends 'layouts/app.twig' %}
+{% block pageclass %}contact{% endblock %}
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+<section class="hero hero-contact">
+    <div class="hero__container container">
+        <h1>Contact</h1>
+    </div>
+</section>
+
+<section class="contact-info">
+    <div class="contact-info__container container">
+        <h2>Contact Us</h2>
+        <p><span>433 Sandwich St. S</span></p>
+        <p>Amherstburg, ON., Canada</p>
+        <p>N9V 3K8</p>
+        <p>P: 519.736.2223</p>
+        <p>F: 519.736.9480</p>
+        <p>E: <a href="mailto:info@apcw.ca">info@apcw.ca</a></p>
+    </div>
+</section>
+
+<div id="map"></div>
+
+<div class="address">
+    <div class="address__container container">
+        <p>433 Sandwich Street South, Amherstburg, ON N9V 3K8</p>
+    </div>
+</div>
+
+{% endblock %}
