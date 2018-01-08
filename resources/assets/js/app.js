@@ -26,6 +26,19 @@ $('.accordion__title').click(function() {
 // =========================================================================
 
 
+$('li[data-tab], .tabs__content').first().addClass('is--active');
+$('.tabs__content').first().addClass('is--active');
+
+$('li[data-tab]').click(function() {
+    var thisTab = $(this).attr('data-tab');
+    var tab = $('.tabs__content' + '[data-tab="' + thisTab + '"]');
+
+    $('li[data-tab]').removeClass('is--active');
+    $(this).addClass('is--active');
+    $('.tabs__content').removeClass('is--active');
+    tab.addClass('is--active');
+});
+
 
 //from home page
 
@@ -57,20 +70,6 @@ $('.dropdown-menu li a').click(function(){
     tabTitle.addClass('is--active');
     $('.tabs__content').removeClass('is--active');
     tabContent.addClass('is--active');
-});
-
-
-$('li[data-tab], .tabs__content').first().addClass('is--active');
-$('.tabs__content').first().addClass('is--active');
-
-$('li[data-tab]').click(function() {
-    var thisTab = $(this).attr('data-tab');
-    var tab = $('.tabs__content' + '[data-tab="' + thisTab + '"]');
-
-    $('li[data-tab]').removeClass('is--active');
-    $(this).addClass('is--active');
-    $('.tabs__content').removeClass('is--active');
-    tab.addClass('is--active');
 });
 
 
@@ -237,22 +236,27 @@ $(function() {
         if ((now >= 9) && (now < 18)) {
             weAre.removeClass('closed');
             weAre.addClass('open');
+            weAre.text('Open');
         } else {
             weAre.removeClass('open');
             weAre.addClass('closed');
+            weAre.text('Closed');
         }
     } else if (today == 6) {
 
         if ((now >= 9) && (now < 14)) {
             weAre.removeClass('closed');
             weAre.addClass('open');
+            weAre.text('Open');
         } else {
             weAre.removeClass('open');
             weAre.addClass('closed');
+            weAre.text('Closed');
         }
     } else {
         weAre.removeClass('open');
         weAre.addClass('closed');
+        weAre.text('Closed');
     }
 });
 
