@@ -39,20 +39,23 @@ $('li[data-tab]').click(function() {
     tab.addClass('is--active');
 });
 
-
 //from home page
 
-var hash = location.hash;
-href = hash.substr(hash.indexOf('#'));
-href = href.substr(1, href.length);
+if (location.hash != "") {
 
-var tabTitle = $('li[data-tab="' + href + '"]');
-var tabContent = $('.tabs__content' + '[data-tab="' + href + '"]');
+    var hash = location.hash;
+    href = hash.substr(hash.indexOf('#'));
+    href = href.substr(1, href.length);
 
-$('li[data-tab]').removeClass('is--active');
-tabTitle.addClass('is--active');
-$('.tabs__content').removeClass('is--active');
-tabContent.addClass('is--active');
+    var tabTitle = $('li[data-tab="' + href + '"]');
+    var tabContent = $('.tabs__content' + '[data-tab="' + href + '"]');
+
+    $('li[data-tab]').removeClass('is--active');
+    tabTitle.addClass('is--active');
+    $('.tabs__content').removeClass('is--active');
+    tabContent.addClass('is--active');
+
+}
 
 
 

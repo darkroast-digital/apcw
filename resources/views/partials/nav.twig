@@ -10,18 +10,13 @@
                         <li><a href="{{ path_for('services') }}#addiction">Addiction Services</a></li>
                         <li><a href="{{ path_for('services') }}#packaging">Packaging</a></li>
                         <li><a href="{{ path_for('services') }}#flu">Flu Clinics</a></li>
+                        <li><a href="{{ path_for('services') }}#clinic">Walk-In Clinic</a></li>
                     </ul>
                 </li>
-                <li class="dropdown {% if current_path == path_for('products') %}is--active{% endif %}"><a href="{{ path_for('products') }}">Products</a>
-                    <ul class="dropdown-menu products-dropdown">
-                        <li><a href="{{ path_for('products') }}#otc">Over the Counter</a></li>
-                        <li><a href="{{ path_for('products') }}#preferred-pricing">Loyalty and Rewards</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown {% if current_path == path_for('education') %}is--active{% endif %}"><a href="{{ path_for('education') }}">Education</a>
+                <li class="dropdown {% if current_path == path_for('education') %}is--active{% endif %}"><a href="{{ path_for('education') }}">Counseling</a>
                     <ul class="dropdown-menu education-dropdown">
                         <li><a href="{{ path_for('education') }}#smoking">Smoking Cessation</a></li>
-                        <li><a href="{{ path_for('education') }}#med-review">In Home Med Review</a></li>
+                        <li><a href="{{ path_for('education') }}#med-review">Medication Reviews</a></li>
                         <li><a href="{{ path_for('education') }}#diabetes">Diabetes Education</a></li>
                         <li><a href="{{ path_for('education') }}#pain">Pain Management</a></li>
                     </ul>
