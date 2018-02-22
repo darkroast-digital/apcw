@@ -228,42 +228,6 @@ $('.slider').slick({
 $('.slick-dots button').empty();
 
 
-// //Date Checker
-$(function() {
-    var today = new Date().getDay();
-    var now = new Date().getHours();
-    var weAre = $('.our-hours');
-
-    if (today < 6 ) {
-
-        if ((now >= 9) && (now < 18)) {
-            weAre.removeClass('closed');
-            weAre.addClass('open');
-            weAre.text('Open');
-        } else {
-            weAre.removeClass('open');
-            weAre.addClass('closed');
-            weAre.text('Closed');
-        }
-    } else if (today == 6) {
-
-        if ((now >= 9) && (now < 14)) {
-            weAre.removeClass('closed');
-            weAre.addClass('open');
-            weAre.text('Open');
-        } else {
-            weAre.removeClass('open');
-            weAre.addClass('closed');
-            weAre.text('Closed');
-        }
-    } else {
-        weAre.removeClass('open');
-        weAre.addClass('closed');
-        weAre.text('Closed');
-    }
-});
-
-
 // //Google Map
 
 var map = new GMaps({
